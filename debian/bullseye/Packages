@@ -12,6 +12,241 @@ Section: base
 Priority: optional
 Description: An OCI container runtime monitor.
 
+Package: ffmpeg
+Version: 7:6.0
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6,
+  libavcodec60 (= 60.31.102),
+  libavdevice60 (= 60.3.100),
+  libavfilter9 (= 9.12.100),
+  libavformat60 (= 60.16.100),
+  libavutil58 (= 58.29.100),
+  libpostproc57 (= 57.3.100),
+  libswresample4 (= 4.12.100),
+  libswscale7 (= 7.5.100),
+  librga,
+  libmpp,
+  libdc1394-25,
+  libcaca0,
+  libpocketsphinx3,
+  libbs2b0,
+  liblilv-0-0,
+  librubberband2,
+  libmysofa1,
+  libflite1,
+  libass9,
+  libvidstab1.1,
+  libssh-4
+Filename: ./ffmpeg_7.6.0_arm64.deb
+Size: 961172
+MD5sum: 1218ec4b80ad282939504442442d3a29
+SHA1: 894e1fbedf575ab3884688d972d09622ddc50bd6
+SHA256: bb18236075745f4afe95f2019e0e093eadb16ac5d82fdae58a010e3b7704791d
+Section: video
+Priority: optional
+Description: FFmpeg multimedia framework
+ FFmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
+ It includes libavcodec, the leading audio/video codec library.
+
+Package: libavcodec60
+Version: 60.31.102
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6, libavutil58 (= 58.29.100)
+Filename: ./libavcodec60_60.31.102_arm64.deb
+Size: 16607724
+MD5sum: 3abcdf87ac51118558b872ee86a6816c
+SHA1: c0c6cef5826a4c4cf13450a50159d37146c4c8b9
+SHA256: 805a884a3a327e01e426f8ba48a3de0ef905d9464b6a0cfd9bd8269cbf27eb0c
+Section: libs
+Priority: optional
+Description: FFmpeg library with de/encoders for audio/video codecs
+ This package contains the libavcodec library from FFmpeg, which provides a vast number of codecs
+ for encoding and decoding audio and video.
+
+Package: libavdevice60
+Version: 60.3.100
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6, libavcodec60 (= 60.31.102), libavformat60 (= 60.16.100), libavutil58 (= 58.29.100)
+Filename: ./libavdevice60_60.3.100_arm64.deb
+Size: 192252
+MD5sum: d88427601af41e2bf915ea4d09db588c
+SHA1: 97589c2687d376e4f4b536ba3e9abc691e69fac4
+SHA256: ef300038597d8ddcbaa48fcb7c2a6d163a5203ca35eabac5220e7667d3f6acbe
+Section: libs
+Priority: optional
+Description: FFmpeg library for handling input and output devices
+ This package contains the libavdevice library from FFmpeg, which provides an abstraction layer
+ for various input and output devices.
+
+Package: libavfilter9
+Version: 9.12.100
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6, libavutil58 (= 58.29.100), libavcodec60 (= 60.31.102)
+Filename: ./libavfilter9_9.12.100_arm64.deb
+Size: 4757080
+MD5sum: dbf5380091c45142b1b2a10e7cc96c56
+SHA1: 092ac60544c2719893e2791e7f26ce0ed440deb8
+SHA256: ed1ff2fb68a3eec29429efa13fab32bfc7d01990ad59e0b1f88a46eeb6656063
+Section: libs
+Priority: optional
+Description: FFmpeg library containing media filters
+ This package contains the libavfilter library from FFmpeg, which provides a way to apply
+ various filters to audio and video data.
+
+Package: libavformat60
+Version: 60.16.100
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6, libavcodec60 (= 60.31.102), libavutil58 (= 58.29.100)
+Filename: ./libavformat60_60.16.100_arm64.deb
+Size: 4043928
+MD5sum: d14ca78be0e8a50f1c65f461370597ee
+SHA1: 830f6b75a1ef44b02f3c89f11cfc7d7c4d6ff3df
+SHA256: 432cde09a877753dcdf56b8a0e46d02838ee698fb41ff537e5c7b8a01289f6bc
+Section: libs
+Priority: optional
+Description: FFmpeg library with (de)muxers for multimedia containers
+ This package contains the libavformat library from FFmpeg, which provides a library for handling
+ various multimedia container formats.
+
+Package: libavutil58
+Version: 58.29.100
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6
+Filename: ./libavutil58_58.29.100_arm64.deb
+Size: 788656
+MD5sum: efde1029036134a25e5386ca3341194e
+SHA1: c84eae84f442ddfacae9f217cf7d02b7afa1f3f4
+SHA256: efdfcb0d66cd6fe27b6527119d69b735f10aefb88f6a5c6ffc80f2d4c0d79da6
+Section: libs
+Priority: optional
+Description: FFmpeg utility library
+ This package contains the libavutil library from FFmpeg, which provides utility functions for
+ simplifying programming with FFmpeg.
+
+Package: libmpp
+Version: 1.3.9
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6
+Filename: ./libmpp_1.3.9-1_arm64.deb
+Size: 828740
+MD5sum: e147dd9b5b2454f5a7a48f0759049864
+SHA1: 7233b254417089bef3c66aea9321ab2bdbd390d9
+SHA256: b8e8e05358b2392e4ff396ba076d858fa73c6358f39b1c6cec797fc5f3628735
+Section: libs
+Priority: optional
+Description: Rockchip MPP Library
+ This package contains the Rockchip Media Process Platform (MPP) library,
+ which provides hardware acceleration for video encoding and decoding on
+ Rockchip devices. It supports various codecs and is optimized for performance
+ on ARM64 architecture.
+
+Package: libmpp-dev
+Version: 1.3.9
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6, libmpp (= 1.3.9)
+Filename: ./libmpp-dev_1.3.9-1_arm64.deb
+Size: 37304
+MD5sum: 6c6ac897bbe4a2700a59359f1eafba61
+SHA1: e0cbb8249910ad889d202e74bd14182f2f808615
+SHA256: 1c1abb4c759b9cc590e6bc73749a885dc9a62534d46de44a73407b289c4e864b
+Section: libdevel
+Priority: optional
+Description: Development files for Rockchip MPP Library
+ This package contains the development files for the Rockchip Media Process
+ Platform (MPP) library. It includes headers and static libraries needed for
+ developing applications that use the MPP library for hardware-accelerated
+ video processing on Rockchip devices.
+
+Package: libpostproc57
+Version: 57.3.100
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6, libavutil58 (= 58.29.100)
+Filename: ./libpostproc57_57.3.100_arm64.deb
+Size: 58284
+MD5sum: 279068f31f7a628cae9612c75a11e577
+SHA1: 98788c58facdc9e66789ddec664e07ec52cd8f9b
+SHA256: 5e2b8b256aea5dc8488b477476ef36b4f6c6a1921eca20e75f57ca3f3a28a618
+Section: libs
+Priority: optional
+Description: FFmpeg library for post processing
+ This package contains the libpostproc library from FFmpeg, which provides post processing
+ functions for improving the visual quality of decoded video.
+
+Package: librga
+Version: 2.1.0
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6
+Filename: ./librga_2.1.0_arm64.deb
+Size: 69164
+MD5sum: ecf772a83cb8da9346d70ea1c0835d5b
+SHA1: 9ad239d57eec53e78f941b5bb716c79c4011621a
+SHA256: 1a2c98e223717eeae844cb036c88e426573889727a3a8665b9d36c28848547ea
+Section: libs
+Priority: optional
+Description: Userspace interface to Rockchip RGA 2D accelerator
+ This package provides the userspace interface to the Rockchip RGA (Raster Graphics Accelerator),
+ a 2D hardware accelerator for image processing tasks. It supports operations such as scaling,
+ rotation, and format conversion, optimized for ARM64 architecture.
+
+Package: librga-dev
+Version: 2.1.0
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6, librga (= 2.1.0)
+Filename: ./librga-dev_2.1.0_arm64.deb
+Size: 16560
+MD5sum: 607f1336c6e687f90e0c3c9a0fbb0b4e
+SHA1: 358c426861eba02f638686558a790b07ac274bbe
+SHA256: 862f245534901797e7c87f19bf725d55938057eb21ed3decb10fff64b609ad4e
+Section: libdevel
+Priority: optional
+Description: Development files for Rockchip RGA 2D accelerator
+ This package contains the development files for the Rockchip RGA (Raster Graphics Accelerator).
+ It includes headers and static libraries needed for developing applications that use the RGA
+ for hardware-accelerated image processing tasks on Rockchip devices.
+
+Package: libswresample4
+Version: 4.12.100
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6, libavutil58 (= 58.29.100)
+Filename: ./libswresample4_4.12.100_arm64.deb
+Size: 105624
+MD5sum: 0d85237d6d96b8c2148caa25403e3108
+SHA1: e1eb12b1b7fbee474ab23cc0f3e6d42e909e89c6
+SHA256: 615b860b2c8f17956f32c0fe87c307fb444fb7d338b7ecce202e39a6787aecf2
+Section: libs
+Priority: optional
+Description: FFmpeg library for audio resampling, rematrixing etc.
+ This package contains the libswresample library from FFmpeg, which provides functions for audio
+ resampling, rematrixing, and format conversion.
+
+Package: libswscale7
+Version: 7.5.100
+Architecture: arm64
+Maintainer: German Ulrich <gerulrich@gmail.com>
+Depends: libc6, libavutil58 (= 58.29.100)
+Filename: ./libswscale7_7.5.100_arm64.deb
+Size: 568444
+MD5sum: 39c265945f8a0bdfb40b4a5e9bb963a9
+SHA1: 7502a0e6284043ff5cbea3a90c8f0478dcc641a0
+SHA256: b72c000e2daf8a9406d26ff407915f7a837378f41c24ba6be2bb33bcfff23de4
+Section: libs
+Priority: optional
+Description: FFmpeg library for image scaling and various conversions
+ This package contains the libswscale library from FFmpeg, which provides functions for scaling,
+ converting, and resizing images.
+
 Package: podman
 Version: 4.9.5-1
 Architecture: arm64
