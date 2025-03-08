@@ -12,6 +12,23 @@ Section: base
 Priority: optional
 Description: An OCI container runtime monitor.
 
+Package: crun
+Version: 1.20-1
+Architecture: arm64
+Maintainer: German Ulrich gerulrich@gmail.com
+Depends: libc6, libcap2, libseccomp2, libsystemd0
+Filename: ./crun_1.20-1_arm64.deb
+Size: 973720
+MD5sum: b84076b6ca02d3f7013e9a06d481199c
+SHA1: 9c6782b4f81116c993f79ae8fe8478a93032e407
+SHA256: dc0a4425fc9101e947688a25c91b07c0eeb2dea9419b713610473a0ce128eca1
+Section: utils
+Priority: optional
+Description: crun - A lightweight OCI runtime for containers
+ crun is a lightweight and fast OCI runtime written in C. It is optimized
+ for low memory usage and is the recommended runtime for rootless containers
+ and cgroups v2.
+
 Package: ffmpeg
 Version: 7:6.0
 Architecture: arm64
@@ -247,6 +264,22 @@ Description: FFmpeg library for image scaling and various conversions
  This package contains the libswscale library from FFmpeg, which provides functions for scaling,
  converting, and resizing images.
 
+Package: netavark
+Version: 1.4.0-1
+Architecture: amd64
+Maintainer: German Ulrich gerulrich@gmail.com
+Depends: libc6, libgcc-s1
+Filename: ./netavark_1.4.0-1_arm64.deb
+Size: 3731904
+MD5sum: 3721aedf53b11584ed3eff7ba598034e
+SHA1: 6c39f694ced341a65570475f162bf4c3e0b856c2
+SHA256: 904cf2991b96f8037f66f53ad92d682b01806170b567246660f9dc93c541b797
+Section: utils
+Priority: optional
+Description: Netavark - A network stack for containers
+ Netavark is a container network stack designed as a replacement for CNI.
+ It is used by Podman to provide advanced networking features.
+
 Package: podman
 Version: 5.4.0-1
 Architecture: arm64
@@ -266,17 +299,17 @@ Depends: btrfs-progs,
   libselinux1,
   libsystemd0,
   pkg-config,
-  runc,
+  runc (>=  1.20),
   uidmap,
   conmon,
   slirp4netns,
   fuse-overlayfs,
   libapparmor1
 Filename: ./podman_5.4.0-1_arm64.deb
-Size: 50791144
-MD5sum: 763088e03227a1ba201c8e7ad4cf0165
-SHA1: 8b0ce1f06b1b990bd4c6fdf4af9fb1343d626f0f
-SHA256: 6ff287ca5d78d60f5b9295fc302903260289e5642664ce7cf24433417eda10f4
+Size: 50791156
+MD5sum: 5f049c282b3e63f7dbf2be2bb0e57b1d
+SHA1: a599b402f9eb144334da54c8c7ad2c5c1ec95058
+SHA256: d1ca89bc4b627f82a91d50f308fd51d6caabd342d8a81c99e620677fa79801ca
 Section: base
 Priority: optional
 Description: A tool for managing OCI containers and pods
