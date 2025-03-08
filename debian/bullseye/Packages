@@ -266,14 +266,14 @@ Description: FFmpeg library for image scaling and various conversions
 
 Package: netavark
 Version: 1.4.0-1
-Architecture: amd64
+Architecture: arm64
 Maintainer: German Ulrich gerulrich@gmail.com
 Depends: libc6, libgcc-s1
 Filename: ./netavark_1.4.0-1_arm64.deb
 Size: 3731904
-MD5sum: 3721aedf53b11584ed3eff7ba598034e
-SHA1: 6c39f694ced341a65570475f162bf4c3e0b856c2
-SHA256: 904cf2991b96f8037f66f53ad92d682b01806170b567246660f9dc93c541b797
+MD5sum: 2b2170df4f6632ab3d7f42aad779ca65
+SHA1: 4e384c3afb1b222a3cb4845e06889e2260a73ae7
+SHA256: 3f226c5de0ef8609cc95133211eb6c74cbabb1fe15f59ca0b3397b3a2049f92c
 Section: utils
 Priority: optional
 Description: Netavark - A network stack for containers
