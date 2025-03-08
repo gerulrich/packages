@@ -1,13 +1,13 @@
 Package: conmon
-Version: 2.1.10-1
+Version: 2.1.13-1
 Architecture: arm64
 Maintainer: German Ulrich gerulrich@gmail.com
-Depends: runc (>=  1.1.12-1)
-Filename: ./conmon_2.1.10-1_arm64.deb
-Size: 30572
-MD5sum: 117003e782b1e81fbb2038869eec3639
-SHA1: 118b89c73fe3d9456030041d1ac5efca21eeda2f
-SHA256: 907601df23ab6cc9ffce7f3fc0a37bda3486a15a8ed52bfacaf8b41aaffa9c43
+Depends: runc (>=  1.2.5-1)
+Filename: ./conmon_2.1.13-1_arm64.deb
+Size: 30544
+MD5sum: 7e343ae44d353fe366b562d8fc600a0a
+SHA1: f9c1644a76f9785151db51952385ec9b6860f6ff
+SHA256: b908d4eaec0e54e8f27f7daf80d286e109619442ce4cedbb0c54f6a031bb931e
 Section: base
 Priority: optional
 Description: An OCI container runtime monitor.
@@ -248,7 +248,7 @@ Description: FFmpeg library for image scaling and various conversions
  converting, and resizing images.
 
 Package: podman
-Version: 4.9.5-1
+Version: 5.4.0-1
 Architecture: arm64
 Maintainer: German Ulrich gerulrich@gmail.com
 Depends: btrfs-progs,
@@ -272,25 +272,25 @@ Depends: btrfs-progs,
   slirp4netns,
   fuse-overlayfs,
   libapparmor1
-Filename: ./podman_4.9.5-1_arm64.deb
-Size: 46271560
-MD5sum: f0b648729fb300f1f5fc8d2072817bac
-SHA1: 73df6699b1f8cd90401f005282d1fac09fe2e1de
-SHA256: d30a2158ef244dc03911967ba5ba19f474785506c88a4a80bad6bde921189c24
+Filename: ./podman_5.4.0-1_arm64.deb
+Size: 50791144
+MD5sum: 763088e03227a1ba201c8e7ad4cf0165
+SHA1: 8b0ce1f06b1b990bd4c6fdf4af9fb1343d626f0f
+SHA256: 6ff287ca5d78d60f5b9295fc302903260289e5642664ce7cf24433417eda10f4
 Section: base
 Priority: optional
 Description: A tool for managing OCI containers and pods
 
 Package: runc
-Version: 1.1.12-1
+Version: 1.2.5-1
 Architecture: arm64
 Maintainer: German Ulrich gerulrich@gmail.com
 Depends: libseccomp2
-Filename: ./runc_1.1.12-1_arm64.deb
-Size: 5284008
-MD5sum: dfcae73f7ee0b9919d0b1e7b6919a157
-SHA1: b72fd66d4cd769ba24e037ecd9833b1b929b01d9
-SHA256: 67f568f4b8799d2574a7e453bd688734bdd2f26b55cccedeb5b8e4f26f9e43d6
+Filename: ./runc_1.2.5-1_arm64.deb
+Size: 6509028
+MD5sum: 1cac0a9b0ae983e5337873ebc919cd24
+SHA1: 5b7d20e124896a7b0f38df9a2110999095a5aa63
+SHA256: faf612052b2f02a9aae8a97c57d053a3e4c16366a6b0773d5a079373d075693f
 Section: base
 Priority: optional
 Description: a CLI tool for spawning and running containers
