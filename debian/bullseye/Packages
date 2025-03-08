@@ -299,17 +299,18 @@ Depends: btrfs-progs,
   libselinux1,
   libsystemd0,
   pkg-config,
-  runc (>=  1.20),
+  runc,
+  crun (>=  1.20),
   uidmap,
   conmon,
   slirp4netns,
   fuse-overlayfs,
   libapparmor1
 Filename: ./podman_5.4.0-1_arm64.deb
-Size: 50791156
-MD5sum: 5f049c282b3e63f7dbf2be2bb0e57b1d
-SHA1: a599b402f9eb144334da54c8c7ad2c5c1ec95058
-SHA256: d1ca89bc4b627f82a91d50f308fd51d6caabd342d8a81c99e620677fa79801ca
+Size: 50791160
+MD5sum: f600338c3fc15a8f807c89ddb4efd30d
+SHA1: 618b8dd93015eea34722310dcacec0ca3fb7b2cc
+SHA256: b4f1f222826c46a93034afcc81b916f30ac0e065fa7f478412728484787f2b5f
 Section: base
 Priority: optional
 Description: A tool for managing OCI containers and pods
